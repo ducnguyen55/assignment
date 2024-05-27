@@ -10,10 +10,8 @@ import java.util.List;
 
 public class BillService {
 
-    private List<Bill> bills;
-
     public BillService() {
-        this.bills = new ArrayList<>();
+
     }
 
     public void createBill(Customer customer, String type, long amount, Date dueDate, String provider) {
