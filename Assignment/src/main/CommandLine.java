@@ -31,7 +31,7 @@ public class CommandLine {
         while (true) {
             System.out.print("$ ");
             String input = scanner.nextLine();
-            String[] parts = input.split(" ");
+            String[] parts = input.split("\\s+(?=([^']*'[^']*')*[^']*$)");
 
             String command = parts[0];
             switch (command) {
